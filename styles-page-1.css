@@ -1,0 +1,154 @@
+*{margin:0; padding:0;}
+
+body{width:60%;
+margin:0 auto;
+padding-top: 5%;
+font-family: Arial, Helvetica, sans-serif;}
+
+header{text-align:right;}
+
+#brufik{
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(10%, transparent), to(rgba(255, 255, 255, 0.4)));
+ 
+}
+
+
+#left-column{
+    width:25%;
+    display:inline-block;
+ 
+}
+
+#right-column{
+    width:60%;
+    display:inline-block;
+    padding: 30px 60px 20px 60px;
+    position: absolute;;
+    top:-20px;
+    right:30px;
+    background-image:linear-gradient(rgb(82,81,78),black);
+    color:white;
+    z-index:-1;
+    height:auto;
+}
+
+@media only screen and (max-width:1140px){
+    #left-column{
+        width:40%;
+        position:relative;
+        right:30%;
+    }
+
+    #right-column{width:80%;
+    right:-20px;}
+}
+
+@media only screen and (max-width:878px){
+    #left-column{
+        width:80%;
+        position:initial;
+        top:0;
+        display:block;
+        margin:0 auto;
+        text-align:center;
+
+    }
+
+    #right-column{
+        display:block;
+        position:initial;
+        width:80%;
+        padding:10px 5px;
+        margin:0 auto;
+        text-align:center !important;
+    }
+
+    #right-column h2{
+        font-size:1.1em;
+        padding:4px !important;
+        text-align:center !important;
+        
+    }
+
+    header img{
+        display:none;
+    }
+    body{
+        width:100%;
+    }
+
+    #foot{
+        position:initial !important;
+    }
+}
+
+
+#right-column h2{
+text-align:left;
+padding-left:20px;
+}
+
+#right-column p{
+    padding:10px;
+    line-height:1.4em;
+}
+
+#container{
+    width:100%;
+    position:relative;
+}
+
+.left-nav{
+    background-color:rgb(242,137,0);
+    margin-bottom:20px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ h2{
+    background-color:rgb(43,41,37);
+    color:white;
+    text-align:center;
+    padding:4px 0px;
+}
+
+.left-nav ul{
+    color:white;
+    list-style-position: inside;
+    padding-left:10px;
+}
+
+.left-nav li a{
+    color:black;
+    
+
+}
+.left-nav li{
+    padding: 10px 0px;
+}
+
+.two-columns{
+    display:flex;
+    justify-content: center;
+
+}
+
+.two-columns div{
+    flex-grow:1;
+    width: 0;
+    padding:15px;
+}
+
+#foot {max-width:50%;
+    margin:0 auto;
+background-color:rgb(242,137,0);
+position: absolute;
+padding:15px;
+box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 40px 60px 0 rgba(0, 0, 0, 0.19);
+}
+
+#foot a{color:black;
+margin-right:10px;}
+
+abbr{
+    color:rgb(242,137,0);
+}

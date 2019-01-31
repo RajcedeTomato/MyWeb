@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link type="text/css" href="styles.css" rel="stylesheet">
+
+    </head>
+    <body>
+            <div class="muck-up">
+                <h1>Welcome To My Personal Page</h1>
+        <div class="navigation" id="text">
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#">Info</a>
+      <a href="#">Contact</a>
+      <button class="toggle-btn" onclick=addClass()>X</button>
+          </div>
+          </div>
+    </body>
+
+
+
+
+<script>
+
+function addClass(){
+    var element=document.getElementById("text");
+
+    element.classList.toggle('open');
+    console.log(element.classList);
+   
+}
+
+
+
+</script>
+
+</html>

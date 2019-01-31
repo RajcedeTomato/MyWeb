@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link type="text/css" href="styles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
+<link rel="icon" href="tomato.gif" type="image/gif" sizes="16x16">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+    <body>
+      <header>
+            <div class="main">
+                <h1>Vítejte na mém webu</h1>
+        <div class="navigation" id="text">
+    <div class="tooltip">  <a href="#about"><i class="fa fa-graduation-cap"></i></a> 
+    <p class="tooltiptext">O mně</p>
+    </div>
+
+    <div class="tooltip">
+      <a href="#gallery" id="galerie"><i class="fa fa-file-image-o"></i></a>
+    <p class="tooltiptext">Galerie</p>
+    </div>
+    <div class="tooltip">  <a href="#work" id="tvorba"><i class="fa fa-code"></i></a>
+    <p class="tooltiptext">Moje weby</p>
+    </div>
+    <div class="tooltip">
+      <a href="#contact" id="kontakt"><i class="fa fa-address-card"></i></a>
+    <p class="tooltiptext">Kontakt</p>
+    </div>
+      <span class="toggle-btn" onclick=addClass()><i class="fa fa-globe"></i>
+       </span>
+          </div>
+
+          </div>
+          
+        </header>
+          <main>
+          <section class="about" id="about">
+<h2>O mně</h2>
+<h3>Vzdělání</h3>
+<ul>
+    <li>Gymnázium Třeboň (2007-2011)</li>
+    <li>Obecné dějiny - FF ZČU (2011-2013)</li>
+    <li>Ekonomická informatika - EF JČU (2014-2018)</li>
+</ul>
+<h3>Praxe</h3>
+<ul>
+    <li>PHP programátor - trainee pozice (září-říjen 2018)</li>
+</ul>
+<h3>Znalosti</h3>
+<ul>
+    <li>HTML5, CSS3</li>
+    <li>Bootstrap 3 - základy</li>
+    <li>JavaScript</li>
+    <li>Principy objektově orientovaného programování</li>
+    <li>PHP, C# - základy</li>
+    <li>UML, SQL</li>
+    <li>Wordpress</li>
+    <li>Adobe Photoshop</li>
+    <li>Corel Draw</li>
+    <li>AJ B1, NJ A1</li>
+    
+</ul>
+
+<div class="slideshow-container">
+        <div class="mySlides fade">
+                
+                <img src="coding.jpg" style="width:40%">
+                <div class="text">Kódování webu</div>
+              </div>
+            
+              <div class="mySlides fade">
+               
+                <img src="vector.jpg" style="width:40%">
+                <div class="text">Vektorová grafika</div>
+              </div>
+            
+              <div class="mySlides fade">
+               
+                <img src="chess.jpg" style="width:40%">
+                <div class="text">Úprava fotografií</div>
+              </div>       
+</div>
+<div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+</section>
+
+<section class="myWork" id="work">
+    <div class="container-flex myWorkList">
+        <div class="myWorkitem">
+        <a href="http://viamedicinae.cz" title="Via Medicinae s.r.o." target="_blank">
+        <img src="heart.gif" alt="srdce" width=40 height=40>
+        </a><p>Via Medicinae s.r.o.</p>
+    </div>
+    <div class="myWorkitem">
+        <a href="http://medi-praktik.cz" title="Medi-Praktik s.r.o." target="_blank">
+        <img src="ginkgo.gif" alt="List ginkga" width=40 height=40></a>
+    </a><p>Medi-Praktik s.r.o.</p>
+    </div>
+    <div class="myWorkitem">
+        <a href="https://13klicu.cz" title="Středisko 13 klíčů" target="_blank">
+        <img src="skaut-logo.svg" alt="Junák logo" width=40 height=40>
+        </a>
+    </a><p>13 klíčů</p>
+    </div>
+    <div class="myWorkitem">
+        <a href="./page-1.html" title="Web 1" target="_blank">
+            <img src="tlapa.gif" alt="Psí stopa" width=40 height=40></a>
+    </a><p>Strana 1</p>
+    </div>
+    </div>
+</section>
+
+<section id="contact">
+<div class="about contact">
+    <h2>Kontakt</h2>
+    <p><a href="tel:+420-725-321-711">725 321 711</a>
+    <a href="mailto:lenkarajnochova@email.cz">lenkarajnochova@email.cz</a></p>   
+  <!--  <form action="send-email.php" method="post" enctype="text/plain" id="contactForm">
+    <label for="name">Jméno: </label>
+    <input type="text" name="jmeno" id="name">
+    <label for="surname">Příjmení: </label>
+    <input type="text" name="prijmeni" id="surname" required>
+    <label for="mail">E-mail: </label>
+    <input type="email" name="email" id="mail" required>
+    <label for="message">Vaše zpráva: </label>
+    <textarea name="message" id="message" style="height:200px; width:50%" required></textarea>
+    <input type="submit" name="Odeslat" onclick=emailConfirm()>
+    
+    
+  </form>
+-->
+</div>
+
+
+</section>
+
+
+
+<div class="gallery" id="gallery">
+    <h2>Galerie</h2>
+
+    <div class="container-flex">
+        
+<img src="6.jpg" id="6.jpg" onclick="openImage('6.jpg')"> 
+<img src="8.jpg" onclick="openImage('8.jpg')"> 
+<img src="10.jpg" onclick="openImage('10.jpg')"> 
+<img src="stezka_vrut.jpg" onclick="openImage('stezka_vrut.jpg')"> 
+<img src="ejminka.jpg" onclick="openImage('ejminka.jpg')"> 
+<img src="strnad obecný.jpg" onclick="openImage('strnad obecný.jpg')"> 
+<img src="křížek u pískovny.jpg" onclick="openImage('křížek u pískovny.jpg')">
+<img src="DSCF0514.jpg" onclick="openImage('DSCF0514.jpg')"> 
+<img src="DSCF1257.jpg" onclick="openImage('DSCF1257.jpg')">
+<img src="DSCF8923.jpg" onclick="openImage('DSCF8923.jpg')">  
+<img src="peefko2018.jpg" onclick="openImage('peefko2018.jpg')"> 
+<img src="elhanavlajka.svg" onclick="openImage('elhanavlajka.svg')"> 
+<img src="jihocesky_snem_placka_cdr.svg" onclick="openImage('jihocesky_snem_placka_cdr.svg')"> 
+<img src="Bez názvu - 1.svg" onclick="openImage('Bez názvu - 1.svg')"> 
+
+
+
+    </div>
+  
+</div>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+<button onclick="topFunction()" id="goToTopBtn" title="Go to top">Nahoru</button>
+</main>
+
+<footer>
+    <p id="copyright"></p>
+</footer>
+
+
+
+    </body>
+
+
+
+
+<script>
+window.onscroll = function () { myFunction() };
+var date=new Date();
+document.getElementById("copyright").innerHTML="&copy; "+date.getFullYear()+" Rajče";
+
+function myFunction(){
+    if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
+document.getElementById("goToTopBtn").style.display = "block";
+}
+else {
+
+document.getElementById("goToTopBtn").style.display = "none";
+}
+
+}
+
+function topFunction() {
+
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+
+
+
+
+function addClass(){
+    var element=document.getElementById("text");
+
+    element.classList.toggle('open');
+    console.log(element.classList);
+   
+}
+
+function openImage(source){
+    document.getElementById('myModal').style.display = "block";
+    var modalImg = document.getElementById("img01");
+    modalImg.src=source;
+    
+
+}
+
+function closeModal(){
+    document.getElementById('myModal').style.display = "none";
+}
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+</script>
+
+</html>
