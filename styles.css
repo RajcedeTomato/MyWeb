@@ -297,6 +297,10 @@ body {background-color:#1A1A1D;
       min-height:50vh;
   }
 
+  .myWork h2{text-align:center;
+color: #950740;
+margin-top:20px;}
+
   
   .myWorkitem{
       padding:50px;
